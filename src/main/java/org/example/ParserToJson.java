@@ -118,7 +118,6 @@ public class ParserToJson {
 
     public static String readJson(String fileName) {
         String json = null;
-        List<String> list = new ArrayList<>();
         JSONParser parser = new JSONParser();
         try {
             JSONArray employee = (JSONArray) parser.parse(new BufferedReader(new FileReader(fileName)));
